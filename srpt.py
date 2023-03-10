@@ -1,5 +1,6 @@
 import string
 from random import *
+#необходимо добавить пакет transliterate
 from transliterate import translit
 #здесь путь к файлу из которого берутся данные(ФИО)
 #в моем случае путь выглядит так
