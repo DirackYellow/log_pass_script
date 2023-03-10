@@ -2,7 +2,8 @@ import string
 from random import *
 from transliterate import translit
 #здесь путь к файлу из которого берутся данные(ФИО)
-with open('C:\\Users\\79505\\Desktop\\Блин.txt', 'r', encoding='utf-8') as file:
+#в моем случае путь выглядит так
+with open('C:\\Users\\79505\\Desktop\\Файл_ФИО.txt', 'r', encoding='utf-8') as file:
     num = [i for i in string.ascii_uppercase if i not in 'OI']
     low = [i for i in string.ascii_lowercase if i not in 'ol']
     upp = [i for i in string.digits[2:]]
@@ -19,7 +20,7 @@ with open('C:\\Users\\79505\\Desktop\\Блин.txt', 'r', encoding='utf-8') as f
         else:
             symbols.add(chr(symbol))
     #здесь файл в который сохраняются логин-пароль...
-    with open('C:\\Users\\79505\\Desktop\\output.txt', 'w', encoding='utf-8') as file_1:
+    with open('C:\\Users\\79505\\Desktop\\лог_пор.txt', 'w', encoding='utf-8') as file_1:
         ru_text = [line.strip().lower() for line in file.readlines()]
         ru_id = []
         for i in ru_text:
