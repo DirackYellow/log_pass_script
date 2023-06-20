@@ -5,9 +5,9 @@ from transliterate import translit
 #here is the path to the file from which the data is taken (full name)
     #in my case the path looks like this
 with open('C:\\Users\\79505\\Desktop\\Файл_ФИО.txt', 'r', encoding='utf-8') as file:
-    num = [i for i in string.ascii_uppercase if i not in 'OI']
+    upp = [i for i in string.ascii_uppercase if i not in 'OI']
     low = [i for i in string.ascii_lowercase if i not in 'ol']
-    upp = [i for i in string.digits[2:]]
+    num = [i for i in string.digits[2:]]
     sym = "_?!@#$%"
     symbols = set()
     # m- password length (in this case 8)
